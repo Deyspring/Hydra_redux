@@ -1,0 +1,92 @@
+09/03/2020
+
+The Covid polka dot party idea didn't go over as well as I'd hoped. I think I'll just get him some lamb dishes from Momen's and call it a night. 
+
+I've set up this new folder and will concentrate on pseudo code only for today. It's super tempting to start banging on the keyboard, but let's be smart about this for once. I only have a little time to work on this today and having G check my pseudocode tomorrow before diving in is a good idea. 
+
+09/02/2020
+
+G'a birthday is in 6 days. Arrgh. I have no idea what to do for him that day. Zoom b-day with goats? 
+I'll mulll over it. I got up at 6:30 two days in a row and I will need a nap at some point today. 
+Yesterday was third afternoon on the job. Adrianna is exhausted, I can tell. I and Anya will have to figure out ways to 
+help her out more. 
+
+Did not make much progress yesterday, but the little time I had seemed focused and productive. 
+Todo: 
+Ask G what's going on with git, I can't save like I think I should be able to. 
+I may not be able to change the menu much, I'll have to read deeper. It seems very limited 
+as far as design goes. Button UX is something I can take care of, it just requires some thought. 
+
+Finish replacing tr/excepts and whiles with WebBrowserWait and other Selenium methods.
+
+OOOOkaay. Time to start from scratch. I must say that having G around has greatly sped up my programming
+progress, but his observations about the Pfam website have made it clear that I can be doing
+this project more simply. So I'm going to start a new file and redo the project using beautiful 
+soup and bash only. He pointed out a few things that will make it easier to find the transcripts I need
+and not have to worry about using selenium etc. to get to the pages I need. 
+
+-Start new project on mac, with no interface
+-See if the Exons are what Callen needs on the View in browser page
+-Figure out how to construct the urls first before writing any code
+-Find the names of the form fields
+-write psedo code on paper and have G review it before coding
+
+09/01/2020
+Month 7 of quarentine
+
+Gautam said I need to do a loop that pauses for a minute after every three links. He doesn't think the site likes being scraped so I have to 
+slow things down a bit. I did get rid of a huge chunk of code related to waiting for the website to load, which was nice. I really should read the 
+docs more. 
+
+replace waits and sleeps(where necessary) with seleinum methods that do the same thing but better.
+Add a pause loop
+Why can't I change the color of the toga menu? 
+On paper figure out how the buttons and menu should work for best UX
+
+o8/31/2020
+I'm amazingly distracted today. I got a late start, I think it's 1pm. 
+:P 
+
+Todo: 
+Figure out if the error I was seeing is due to the website or my code. 
+(It was the website shutting down)
+First, review the code, I may have changed something while talking w/Git
+(found some errors, corrected them.)
+
+
+
+
+08/29/2020
+
+I'm losing so many logs I have to start saving this code to github. 
+
+Todo: 
+save code to github
+figure out how to get hydraapp working
+    - seems there's an error accessing the NHI website
+
+Clean up time.sleep code, G thinks it smells bad. 
+This is the latest error, which is puzzling. I think that I may have typed in some uncommented 
+changes when talking with g, because this error wasn't occurring before. 
+
+
+How best to use Git with a Virtual environment
+For Git users, in order to track project dependencies, continue below:
+
+    While in the virtual environment, start by installing a package. For this example we will use pandas. Run pip install pandas
+    Run deactivate to stop the virtual environment
+    Initialize the repo by running git init
+    Run echo ‘env' > .gitignore to include the env folder in the .gitignore file so the virtual environment is ignored in source control
+    Run pip freeze > requirements.txt to place the dependencies in a text file to be committed. Freezing reads all the installed dependencies and then produces a text file with the name of the dependency and the installed version number.
+    Run git add requirements.txt to check the file into source control.
+    Commit the files and push to a repo.
+
+C:\...>md beeware-tutorial
+C:\...>cd beeware-tutorial
+C:\...>py -m venv beeware-venv
+C:\...>beeware-venv\Scripts\activate.bat
+
+python -m pip install briefcase
+briefcase new
+cd helloworld
+briefcase dev
